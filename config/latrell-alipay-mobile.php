@@ -8,10 +8,10 @@ return [
 	'sign_type' => 'RSA',
 
 	// 商户私钥。
-	'private_key_path' => __DIR__ . '/key/private_key.pem',
+	'private_key_path' => __DIR__ . '/key/private_key.pem.sample',
 
 	// 阿里公钥。
-	'public_key_path' => __DIR__ . '/key/public_key.pem',
+	'public_key_path' => __DIR__ . '/key/public_key.pem.sample',
 
 	// 异步通知连接。
 	'notify_url' => 'http://xxx'
