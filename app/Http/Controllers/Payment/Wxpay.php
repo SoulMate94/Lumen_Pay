@@ -419,7 +419,7 @@ class Wxpay implements \App\Contract\PaymentMethod
         }
 
         $this->amountEscape = in_array(
-            env('APP_ENVS'), ['local', 'test', 'stage',]
+            env('APP_ENV'), ['local', 'test', 'stage',]
         ) ? 1 : $this->getIntFee($params['amount']);
 
         if (false === $this->amountEscape) {

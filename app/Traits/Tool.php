@@ -181,4 +181,12 @@ class Tool
 
         return $_paginator;
     }
+
+    public static function getIntFee(float $amount)
+    {
+        $amount = explode('.', $amount*100);
+        $amount = isset($amount[0]) ? intval($amount[0]) : false;
+
+        return $amount;
+    }
 }
